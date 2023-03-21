@@ -5,8 +5,8 @@ func = input(("Enter the trigonometric ratio (sin/sine, cos/cosine or tan/tangen
 
 sides = {}
 sides.update(dict.fromkeys(["sin", "sine"], ["perpendicular", "hypotenuse"]))
-sides.update(dict.fromkeys(["cos", "cosine"], ["perpendicular", "hypotenuse"]))
-sides.update(dict.fromkeys(["tan", "tangent"], ["perpendicular", "hypotenuse"])) #could probably improve this
+sides.update(dict.fromkeys(["cos", "cosine"], ["base", "hypotenuse"]))
+sides.update(dict.fromkeys(["tan", "tangent"], ["perpendicular", "base"])) #could probably improve this
 
 if func not in sides:
     print("Please ONLY type the ratio as hinted in the prompt")
