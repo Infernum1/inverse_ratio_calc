@@ -1,7 +1,7 @@
 import math
 from triangle_drawer import Triangle
 
-func = input(("Enter the trigonometry ratio (sin, cos or tan): "))
+func = input(("Enter the trigonometric ratio (sin, cos or tan): "))
 
 sides = {"sin": ["perpendicular", "hypotenuse"], "cos": ["base", "hypotenuse"], "tan": ["perpendicular", "base"]}
 
