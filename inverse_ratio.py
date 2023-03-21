@@ -9,15 +9,16 @@ sides.update(dict.fromkeys(["cos", "cosine"], ["base", "hypotenuse"]))
 sides.update(dict.fromkeys(["tan", "tangent"], ["perpendicular", "base"])) #could probably improve this
 
 list_of_ratios = list(sides)
-searched_ratio = process.extract(func, list_of_ratios)
+if func not in list_of_ratios:
+    searched_ratio = process.extract(func, list_of_ratios)
 
-if searched_ratio[0][1] >= 60:
-    print(f"Not a valid ratio, perhaps you made a typo but meant '{searched_ratio[0][0]}'")
-    exit()
+    if searched_ratio[0][1] >= 60:
+        print(f"Not a valid ratio, perhaps you made a typo but meant '{searched_ratio[0][0]}'")
+        exit()
 
-elif searched_ratio[0][1] < 60:
-    print("Please ONLY type the ratio as hinted in the prompt")
-    exit()
+    elif searched_ratio[0][1] < 60:
+        print("Please ONLY type the ratio as hinted in the prompt")
+        exit()
 
 chosen_sides_by_ratio = sides[func] 
 
