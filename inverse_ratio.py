@@ -27,5 +27,5 @@ ratios.update(dict.fromkeys(["tan", "tangent"], math.atan(decimal_value))) #and 
 radian = ratios[func]
 theta = radian * 180/math.pi
 
-print(f"{round(theta, 2)} degrees (at Angle B)")
+print(f"{round(theta, 2)} degrees (at ∠B)")
 Triangle(side1, side2, angle=90.0).draw()
