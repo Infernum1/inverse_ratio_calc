@@ -20,12 +20,15 @@ elif searched_ratio[0][1] < 60:
     exit()
 
 chosen_sides_by_ratio = sides[func] 
+
 try:
     side1 = eval((input(f"Input {chosen_sides_by_ratio[0]} measurement: ")))
     side2 = eval((input(f"Input {chosen_sides_by_ratio[1]} measurement: ")))
+
 except NameError:
     print("Make sure you ONLY input the integer/decimal value of the measure of the side.")
     exit()
+    
 decimal_value = side1/side2
 
 ratios = {}
